@@ -1,0 +1,130 @@
+// Wide Screens
+
+@include mediaXl {}
+
+
+// Smartphones
+@include mediaSm {
+  body {
+
+    // Section 1
+    #sec1 {
+      #david {
+        padding-top: 75px !important;
+        font-size: 2rem !important;
+      }
+
+      #hello {
+        .txt-type {
+          font-size: 5rem !important;
+        }
+
+      }
+    }
+
+    // End Section 1
+    // Start Section 2
+    #sec2 {
+      background: $fourth !important;
+
+      #about {
+        font-size: 2rem !important;
+      }
+
+      #b1 {
+        height: 220px !important;
+
+        img {
+          margin-top: 10px !important;
+          width: 200px !important;
+          height: 200px !important;
+        }
+      }
+
+      #b2 {
+        height: 200px !important;
+
+        p {
+          font-size: 1rem !important;
+        }
+      }
+
+      #b3 {
+        height: 220px !important;
+
+        p {
+          font-size: 1.3rem !important;
+        }
+      }
+    }
+
+    #sec3 {
+      #knowledge {
+        font-size: 2rem !important;
+      }
+
+
+      i {
+        font-size: 3rem !important;
+      }
+
+      #learn {
+        padding: 10px !important;
+
+        h1 {
+          font-size: 1rem !important;
+          margin-top: 10px !important;
+          margin-bottom: 10px !important;
+        }
+
+        .progress {
+          height: 20px !important;
+        }
+
+        .progress-bar-striped {
+          color: white;
+          font-size: 1rem;
+
+
+        }
+      }
+
+
+
+    }
+
+    // End Section 3
+    // Start Section 4
+    #sec4 {
+      #work {
+        font-size: 1.5rem !important;
+      }
+
+      .container-fluid {
+        width: 100% !important;
+
+        .projects {
+          .row {
+            .btn {
+              padding: 0.5rem !important;
+              font-size: 1rem !important;
+            }
+          }
+        }
+      }
+    }
+
+    // Demo a
+    .demo a {
+      font-size: 1rem !important;
+      bottom: 15px !important;
+    }
+
+    a span {
+      width: 24px !important;
+      height: 24px !important;
+      margin-left: -12px !important;
+    }
+  }
+
+}

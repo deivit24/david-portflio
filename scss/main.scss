@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobil';
 
 * {
   box-sizing: border-box;
@@ -23,12 +24,18 @@ body {
     height: 20%;
   }
 
+  // ===== Section 1 Start=====
   #sec1 {
-    height: 100vh;
+
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    &:after {
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .8) 80%, rgba(0, 0, 0, .8) 100%);
+    }
 
 
     #david {
@@ -51,18 +58,275 @@ body {
         .txt-type {
           border-right: 1px solid white;
           color: $main-color;
-          font-size: 10rem;
+          font-size: 12rem;
         }
       }
     }
   }
+
+  // ===== Section 1 End =====
+  // ===== Section 2 Start =====
+  #sec2 {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+    #about {
+      padding: 20px;
+      color: $second;
+      font-family: $crazy;
+      text-transform: uppercase;
+      @include easeOut;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    #contain2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 80vh;
+
+      .block {
+
+        width: 100%;
+        height: 400px;
+
+
+      }
+
+      #b1 {
+        background: $main-dark;
+        transition: all 1s ease-in-out;
+        transform: translateX(-400px);
+        opacity: 0;
+
+        img {
+          margin-top: 25px;
+          border-radius: 50%;
+          border: solid 3px $second;
+          width: 350px;
+          height: 350px;
+        }
+
+      }
+
+      #b2 {
+        background: $second;
+        transition: all 1s ease-in-out;
+        transform: translateX(300px);
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          font-size: 2rem;
+          font-family: $h;
+
+          .name {
+            color: $fourth;
+            font-weight: bold;
+          }
+        }
+
+      }
+
+      #b3 {
+        background: $fourth;
+        transition: all 1s ease-in-out;
+        transform: translateY(300px);
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 330px;
+
+        p {
+          color: white;
+          font-size: 3rem;
+
+        }
+      }
+
+
+    }
+
+
+  }
+
+  // =====End Section 2=====
+  // ===== Start Section 3=====
+  #sec3 {
+    background: lighten($third, 10);
+
+
+    #knowledge {
+      padding: 20px;
+      color: $second;
+      font-family: $crazy;
+      text-transform: uppercase;
+      @include easeOut;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .container-fluid {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .block-3 {
+
+          width: auto;
+          height: auto;
+          padding: 35px;
+          transition: all 1s ease-in-out;
+          opacity: 0;
+
+
+
+
+          i {
+            font-size: 10rem;
+            padding: 20px;
+          }
+
+          h1 {
+            color: $second;
+            margin-top: 25px;
+            margin-bottom: 15px
+          }
+
+          .progress {
+            height: 30px;
+          }
+
+          .progress-bar-striped {
+            color: white;
+            font-size: 2rem;
+
+
+          }
+        }
+
+        #learn {
+          background: $fourth;
+        }
+      }
+
+
+    }
+  }
+
+  // =====End Section 3=====
+  // ===== Start Section 4 =====
+
+  #sec4 {
+
+    #work {
+      padding: 20px;
+      color: $second;
+      font-family: $crazy;
+      text-transform: uppercase;
+      @include easeOut;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    .container-fluid {
+      height: 80vh;
+      background: $third;
+      width: 80%;
+
+
+
+      .projects {
+
+
+        img {
+          width: 100%;
+          border: 1px white solid;
+
+          &:hover {
+            opacity: 0.5;
+            border-color: $second;
+            @include easeOut;
+            cursor: pointer;
+          }
+
+        }
+
+        .row {
+
+          .btn {
+            display: block;
+            padding: 0.5rem 1rem;
+            border: 0;
+            margin-bottom: 0.3rem;
+            text-align: center;
+            font-size: 1.5rem;
+            @include easeOut;
+
+
+          }
+
+          .btn-dark {
+
+            width: 100%;
+            background: $second;
+            color: $third;
+
+            &:hover {
+              cursor: pointer;
+              background: $main-dark;
+              color: white;
+            }
+
+
+          }
+
+          .btn-light {
+
+            background: $second;
+            color: $third;
+
+            &:hover {
+              cursor: pointer;
+              background: $fourth;
+              color: white;
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .b-appear {
+    transform: translateX(0px) !important;
+    transform: translateY(0px) !important;
+    opacity: 1 !important;
+  }
+
 
   .change {
     text-transform: capitalize !important;
     @include easeOut;
   }
 
-  .demo a {
+  .demo .scroll {
     position: absolute;
     bottom: 50px;
     left: 48%;
@@ -78,7 +342,7 @@ body {
     transition: opacity .3s;
   }
 
-  .demo a:hover {
+  .demo .scroll:hover {
     opacity: .5;
   }
 }

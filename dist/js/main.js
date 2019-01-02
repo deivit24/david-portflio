@@ -37,7 +37,7 @@ function toggleMenu() {
 // Change my Name
 
 setInterval(function () {
-  // toggle the class every five second
+  // toggle the class every three second
   $('#david').toggleClass('change');
   setTimeout(function () {
     // toggle back after 1 second
@@ -45,6 +45,30 @@ setInterval(function () {
   }, 1000);
 
 }, 3000);
+// Change the About me Text
+
+setInterval(function () {
+  // toggle the class every three second
+  $('#about').toggleClass('change');
+  setTimeout(function () {
+    // toggle back after 1 second
+    $('#about').toggleClass('change');
+  }, 1000);
+
+}, 3000);
+
+// Change Knowledge Text
+setInterval(function () {
+  // toggle the class every three second
+  $('#knowledge').toggleClass('change');
+  setTimeout(function () {
+    // toggle back after 1 second
+    $('#knowledge').toggleClass('change');
+  }, 1000);
+
+}, 2000);
+
+// Type Writer
 
 const TypeWriter = function (txtElement, words, wait = 3000) {
   this.txtElement = txtElement;
@@ -77,7 +101,6 @@ TypeWriter.prototype.type = function () {
 
   // Initial Type Speed
   let typeSpeed = 200;
-
   if (this.isDeleting) {
     typeSpeed /= 2;
   }
@@ -121,4 +144,31 @@ $(function () {
       scrollTop: $($(this).attr('href')).offset().top
     }, 500, 'linear');
   });
+});
+
+// Scroll Magic Section 2
+
+// text appear
+var block = new ScrollMagic.Controller();
+
+$('.block').each(function () {
+  var textSlide = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.9
+    })
+    .setClassToggle(this, 'b-appear')
+    .addIndicators()
+    .addTo(block);
+});
+
+var block3 = new ScrollMagic.Controller();
+
+$('.block-3').each(function () {
+  var textSlide = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.9
+    })
+    .setClassToggle(this, 'b-appear')
+    .addIndicators()
+    .addTo(block3);
 });

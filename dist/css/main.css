@@ -21,15 +21,6 @@ section {
   width: 100%;
   height: 100vh;
   text-align: center; }
-  section:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 80%;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%); }
   section a span {
     text-align: center;
     position: absolute;
@@ -45,6 +36,11 @@ section {
     -webkit-animation: down 1.5s infinite;
     animation: down 1.5s infinite;
     box-sizing: border-box; }
+  section .last {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    -webkit-animation: up 1.5s infinite;
+    animation: up 1.5s infinite; }
 
 @-webkit-keyframes down {
   0% {
@@ -64,6 +60,26 @@ section {
     opacity: 1; }
   100% {
     transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0; } }
+
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: rotate(135deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: rotate(135deg) translate(-20px, 20px);
+    opacity: 0; } }
+
+@keyframes up {
+  0% {
+    transform: rotate(135deg) translate(0, 0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: rotate(135deg) translate(-20px, 20px);
     opacity: 0; } }
 
 .menu-btn {
@@ -162,6 +178,60 @@ section {
 .nav-item:nth-child(5) {
   transition-delay: 0.5s; }
 
+@media screen and (max-width: 500px) {
+  body #sec1 #david {
+    padding-top: 75px !important;
+    font-size: 2rem !important; }
+  body #sec1 #hello .txt-type {
+    font-size: 5rem !important; }
+  body #sec2 {
+    background: #f74e23 !important; }
+    body #sec2 #about {
+      font-size: 2rem !important; }
+    body #sec2 #b1 {
+      height: 220px !important; }
+      body #sec2 #b1 img {
+        margin-top: 10px !important;
+        width: 200px !important;
+        height: 200px !important; }
+    body #sec2 #b2 {
+      height: 200px !important; }
+      body #sec2 #b2 p {
+        font-size: 1rem !important; }
+    body #sec2 #b3 {
+      height: 220px !important; }
+      body #sec2 #b3 p {
+        font-size: 1.3rem !important; }
+  body #sec3 #knowledge {
+    font-size: 2rem !important; }
+  body #sec3 i {
+    font-size: 3rem !important; }
+  body #sec3 #learn {
+    padding: 10px !important; }
+    body #sec3 #learn h1 {
+      font-size: 1rem !important;
+      margin-top: 10px !important;
+      margin-bottom: 10px !important; }
+    body #sec3 #learn .progress {
+      height: 20px !important; }
+    body #sec3 #learn .progress-bar-striped {
+      color: white;
+      font-size: 1rem; }
+  body #sec4 #work {
+    font-size: 1.5rem !important; }
+  body #sec4 .container-fluid {
+    width: 100% !important; }
+    body #sec4 .container-fluid .projects .row .btn {
+      padding: 0.5rem !important;
+      font-size: 1rem !important; }
+  body .demo a {
+    font-size: 1rem !important;
+    bottom: 15px !important; }
+  body a span {
+    width: 24px !important;
+    height: 24px !important;
+    margin-left: -12px !important; } }
+
 * {
   box-sizing: border-box; }
 
@@ -181,11 +251,14 @@ body {
     height: 20%; }
   html #sec1,
   body #sec1 {
-    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat; }
+    html #sec1:after,
+    body #sec1:after {
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%); }
     html #sec1 #david,
     body #sec1 #david {
       padding: 10px;
@@ -205,13 +278,188 @@ body {
       body #sec1 #contain #hello .txt-type {
         border-right: 1px solid white;
         color: #66FCF1;
-        font-size: 10rem; }
+        font-size: 12rem; }
+  html #sec2,
+  body #sec2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    html #sec2 #about,
+    body #sec2 #about {
+      padding: 20px;
+      color: #c5c6c7;
+      font-family: "Major Mono Display", monospace;
+      text-transform: uppercase;
+      transition: all 0.5s ease-out;
+      text-align: center;
+      font-size: 3rem; }
+    html #sec2 #contain2,
+    body #sec2 #contain2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 80vh; }
+      html #sec2 #contain2 .block,
+      body #sec2 #contain2 .block {
+        width: 100%;
+        height: 400px; }
+      html #sec2 #contain2 #b1,
+      body #sec2 #contain2 #b1 {
+        background: #45a29e;
+        transition: all 1s ease-in-out;
+        transform: translateX(-400px);
+        opacity: 0; }
+        html #sec2 #contain2 #b1 img,
+        body #sec2 #contain2 #b1 img {
+          margin-top: 25px;
+          border-radius: 50%;
+          border: solid 3px #c5c6c7;
+          width: 350px;
+          height: 350px; }
+      html #sec2 #contain2 #b2,
+      body #sec2 #contain2 #b2 {
+        background: #c5c6c7;
+        transition: all 1s ease-in-out;
+        transform: translateX(300px);
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        html #sec2 #contain2 #b2 p,
+        body #sec2 #contain2 #b2 p {
+          font-size: 2rem;
+          font-family: "Montserrat", sans-serif; }
+          html #sec2 #contain2 #b2 p .name,
+          body #sec2 #contain2 #b2 p .name {
+            color: #f74e23;
+            font-weight: bold; }
+      html #sec2 #contain2 #b3,
+      body #sec2 #contain2 #b3 {
+        background: #f74e23;
+        transition: all 1s ease-in-out;
+        transform: translateY(300px);
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 330px; }
+        html #sec2 #contain2 #b3 p,
+        body #sec2 #contain2 #b3 p {
+          color: white;
+          font-size: 3rem; }
+  html #sec3,
+  body #sec3 {
+    background: #20232e; }
+    html #sec3 #knowledge,
+    body #sec3 #knowledge {
+      padding: 20px;
+      color: #c5c6c7;
+      font-family: "Major Mono Display", monospace;
+      text-transform: uppercase;
+      transition: all 0.5s ease-out;
+      text-align: center;
+      font-size: 3rem; }
+    html #sec3 .container-fluid,
+    body #sec3 .container-fluid {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      html #sec3 .container-fluid .row,
+      body #sec3 .container-fluid .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        html #sec3 .container-fluid .row .block-3,
+        body #sec3 .container-fluid .row .block-3 {
+          width: auto;
+          height: auto;
+          padding: 35px;
+          transition: all 1s ease-in-out;
+          opacity: 0; }
+          html #sec3 .container-fluid .row .block-3 i,
+          body #sec3 .container-fluid .row .block-3 i {
+            font-size: 10rem;
+            padding: 20px; }
+          html #sec3 .container-fluid .row .block-3 h1,
+          body #sec3 .container-fluid .row .block-3 h1 {
+            color: #c5c6c7;
+            margin-top: 25px;
+            margin-bottom: 15px; }
+          html #sec3 .container-fluid .row .block-3 .progress,
+          body #sec3 .container-fluid .row .block-3 .progress {
+            height: 30px; }
+          html #sec3 .container-fluid .row .block-3 .progress-bar-striped,
+          body #sec3 .container-fluid .row .block-3 .progress-bar-striped {
+            color: white;
+            font-size: 2rem; }
+        html #sec3 .container-fluid .row #learn,
+        body #sec3 .container-fluid .row #learn {
+          background: #f74e23; }
+  html #sec4 #work,
+  body #sec4 #work {
+    padding: 20px;
+    color: #c5c6c7;
+    font-family: "Major Mono Display", monospace;
+    text-transform: uppercase;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    font-size: 3rem; }
+  html #sec4 .container-fluid,
+  body #sec4 .container-fluid {
+    height: 80vh;
+    background: #0b0c10;
+    width: 80%; }
+    html #sec4 .container-fluid .projects img,
+    body #sec4 .container-fluid .projects img {
+      width: 100%;
+      border: 1px white solid; }
+      html #sec4 .container-fluid .projects img:hover,
+      body #sec4 .container-fluid .projects img:hover {
+        opacity: 0.5;
+        border-color: #c5c6c7;
+        transition: all 0.5s ease-out;
+        cursor: pointer; }
+    html #sec4 .container-fluid .projects .row .btn,
+    body #sec4 .container-fluid .projects .row .btn {
+      display: block;
+      padding: 0.5rem 1rem;
+      border: 0;
+      margin-bottom: 0.3rem;
+      text-align: center;
+      font-size: 1.5rem;
+      transition: all 0.5s ease-out; }
+    html #sec4 .container-fluid .projects .row .btn-dark,
+    body #sec4 .container-fluid .projects .row .btn-dark {
+      width: 100%;
+      background: #c5c6c7;
+      color: #0b0c10; }
+      html #sec4 .container-fluid .projects .row .btn-dark:hover,
+      body #sec4 .container-fluid .projects .row .btn-dark:hover {
+        cursor: pointer;
+        background: #45a29e;
+        color: white; }
+    html #sec4 .container-fluid .projects .row .btn-light,
+    body #sec4 .container-fluid .projects .row .btn-light {
+      background: #c5c6c7;
+      color: #0b0c10; }
+      html #sec4 .container-fluid .projects .row .btn-light:hover,
+      body #sec4 .container-fluid .projects .row .btn-light:hover {
+        cursor: pointer;
+        background: #f74e23;
+        color: white; }
+  html .b-appear,
+  body .b-appear {
+    transform: translateX(0px) !important;
+    transform: translateY(0px) !important;
+    opacity: 1 !important; }
   html .change,
   body .change {
     text-transform: capitalize !important;
     transition: all 0.5s ease-out; }
-  html .demo a,
-  body .demo a {
+  html .demo .scroll,
+  body .demo .scroll {
     position: absolute;
     bottom: 50px;
     left: 48%;
@@ -225,6 +473,6 @@ body {
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s; }
-  html .demo a:hover,
-  body .demo a:hover {
+  html .demo .scroll:hover,
+  body .demo .scroll:hover {
     opacity: .5; }
