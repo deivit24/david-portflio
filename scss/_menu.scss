@@ -77,7 +77,7 @@
     padding: 0;
     background: darken($second, 5);
     list-style: none;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(-50%, -100%, 0);
     @include easeOut;
 
     &.show {
@@ -90,17 +90,18 @@
   &-branding {
     background: $main-dark;
     @include easeOut;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(50%, 100%, 0);
 
     &.show {
       transform: translate3d(0, 0, 0);
     }
 
     .portrait {
-      width: 250px;
-      height: 250px;
+      width: 500px;
+      height: 500px;
       background: url(../img/me.jpg);
-
+      background-repeat: no-repeat;
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px $second;
     }
@@ -116,7 +117,7 @@
     }
 
     &.current>a {
-      color: $main-color;
+      color: $third;
     }
   }
 
@@ -126,7 +127,7 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    color: set-text-color($main-dark);
+    color: $third;
     text-decoration: none;
     @include easeOut;
 

@@ -67,7 +67,26 @@ setInterval(function () {
   }, 1000);
 
 }, 2000);
+// Change work
+setInterval(function () {
+  // toggle the class every three second
+  $('#work').toggleClass('change');
+  setTimeout(function () {
+    // toggle back after 1 second
+    $('#work').toggleClass('change');
+  }, 1000);
 
+}, 2000);
+// change contact
+setInterval(function () {
+  // toggle the class every three second
+  $('#contact').toggleClass('change');
+  setTimeout(function () {
+    // toggle back after 1 second
+    $('#contact').toggleClass('change');
+  }, 1000);
+
+}, 2000);
 // Type Writer
 
 const TypeWriter = function (txtElement, words, wait = 3000) {
@@ -157,18 +176,31 @@ $('.block').each(function () {
       triggerHook: 0.9
     })
     .setClassToggle(this, 'b-appear')
-    .addIndicators()
+
     .addTo(block);
 });
 
 var block3 = new ScrollMagic.Controller();
 
 $('.block-3').each(function () {
-  var textSlide = new ScrollMagic.Scene({
+  var blockSlide = new ScrollMagic.Scene({
       triggerElement: this,
       triggerHook: 0.9
     })
     .setClassToggle(this, 'b-appear')
-    .addIndicators()
+
     .addTo(block3);
+});
+
+// work appear
+var con = new ScrollMagic.Controller();
+
+$('.col-md-4').each(function () {
+  var conSlide = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.9
+    })
+    .setClassToggle(this, 'b-appear')
+
+    .addTo(con);
 });

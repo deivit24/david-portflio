@@ -254,8 +254,9 @@ body {
       .projects {
 
 
+
         img {
-          width: 100%;
+          width: 90%;
           border: 1px white solid;
 
           &:hover {
@@ -268,6 +269,11 @@ body {
         }
 
         .row {
+          .col-md-4 {
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: translateY(200px);
+          }
 
           .btn {
             display: block;
@@ -278,12 +284,13 @@ body {
             font-size: 1.5rem;
             @include easeOut;
 
-
           }
 
           .btn-dark {
 
-            width: 100%;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
             background: $second;
             color: $third;
 
@@ -297,9 +304,11 @@ body {
           }
 
           .btn-light {
-
+            width: 90%;
             background: $second;
             color: $third;
+            margin-left: auto;
+            margin-right: auto;
 
             &:hover {
               cursor: pointer;
@@ -310,6 +319,53 @@ body {
           }
         }
 
+      }
+    }
+  }
+
+  //====== End Section 4=====
+  //  ===== Start Section 5 Contact =====
+
+  #sec5 {
+    #contact {
+      padding: 20px;
+      color: $second;
+      font-family: $crazy;
+      text-transform: uppercase;
+      @include easeOut;
+      text-align: center;
+      font-size: 3rem;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    background: #333;
+    background-image: -webkit-linear-gradient(35deg, $third, #333);
+    background-image: linear-gradient(35deg, $third, #333);
+
+
+    form {
+      text-align: left;
+
+      label {
+        color: white;
+      }
+    }
+
+    .icons {
+      margin-top: 1rem;
+
+      a {
+        padding: 0.4rem;
+        color: #fff;
+        z-index: 3;
+        text-decoration: none;
+        font-size: 2rem;
+
+        &:hover {
+          color: $main-color;
+          @include easeOut;
+        }
       }
     }
   }

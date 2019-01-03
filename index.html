@@ -1,255 +1,394 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/main.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="dist/css/main.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
+    <!-- Devicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
 
-  <!-- Devicon -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat|Roboto|Slabo+27px"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat|Roboto|Slabo+27px" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
 
-  <title>Hello, world!</title>
-</head>
-
-<body id="bg-img">
-  <div class="overlay"></div>
-  <header>
-
-    <div class="menu-btn">
-
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-
-    </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+  <body id="bg-img">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item current">
-          <a href="index.html" class="nav-link">
-            Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#sec2" class="nav-link">
-            About</a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            Work</a>
-        </li>
-        <li class="nav-item">
-          <a href="knowledge.html" class="nav-link">
-            My Knowledge </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            Contact</a>
-        </li>
 
-      </ul>
-
-    </nav>
-  </header>
-  <section id="sec1" class="demo">
-
-    <h1 id="david">David Salazar</h1>
-    <div id="contain" class="container">
-      <h1 id="hello"> <span class="txt-type" data-wait="3000" data-words='[ "Hello!",   
-        "¡Hola!", 
-        "こんにちは",   
-        "Guten Tag!",   
-        "你好!",   
-        "Привет!",   
-        "नमस्ते!" ]'></span></h1>
-    </div>
-    <a href="#sec2" class="scroll"><span></span>Scroll</a>
-  </section>
-  <section id="sec2" class="demo">
-    <h1 id="about">About Me</h1>
-    <div class="container" id="contain2">
-      <div class="row">
-        <div id="b1" class="col-md-6 block">
-          <img src="dist/img/me.jpg" alt="">
-        </div>
-        <div id="b2" class="col-md-6 block">
-          <p>
-            I'm <span class="name"> David Salazar</span>, a husband, business owner, Front-End Web Developer, and
-            aspiring Full-Stack.</p>
-        </div>
-        <div id="b3" class="col block">
-          <p> Born in McAllen, TX and was raised a tennis player. Lived in Nashville, New York, United Kingdom, and St.
-            Louis.
-
-            But these days I live in Austin, TX.</p>
-        </div>
+      <nav class="menu">
+        <div class="menu-branding"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link"> Enjoy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="sec1" class="demo">
+      <h1 id="david">David Salazar</h1>
+      <div id="contain" class="container">
+        <h1 id="hello">
+          <span
+            class="txt-type"
+            data-wait="3000"
+            data-words="[ &quot;Hello!&quot;,   
+        &quot;¡Hola!&quot;, 
+        &quot;こんにちは&quot;,   
+        &quot;Guten Tag!&quot;,   
+        &quot;你好!&quot;,   
+        &quot;Привет!&quot;,   
+        &quot;नमस्ते!&quot; ]"
+          ></span>
+        </h1>
       </div>
-    </div>
-    <a href="#sec3" class="scroll"><span></span>Scroll</a>
-  </section>
-  <section id="sec3" class="demo">
-    <h1 id="knowledge">Knowledge & Skills</h1>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-6 block-3">
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-        </div>
-        <div class="col-xs-6 block-3">
-          <i class="devicon-visualstudio-plain colored"></i>
-
-
-
-          <i class="devicon-chrome-plain-wordmark colored"></i>
-
-          <i class="devicon-git-plain-wordmark colored"></i>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-6 block-3">
-          <i class="devicon-sass-original colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <i class="devicon-jquery-plain-wordmark colored"></i>
-        </div>
-        <div id="learn" class="col-xs-6 block-3">
-
-          <i class="devicon-react-original-wordmark colored"></i>
-
-          <i class="devicon-babel-plain colored"></i>
-          <i class="devicon-webpack-plain-wordmark colored"></i>
-          <h1>Currently Learning</h1>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%;"
-              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <a href="#sec4" class="scroll"><span></span>Scroll</a>
-  </section>
-  <section id="sec4" class="demo">
-    <h1 id="work">Work & Progress</h1>
-    <div class="container-fluid">
-
-      <div class="projects">
+      <a href="#sec2" class="scroll"><span></span>Scroll</a>
+    </section>
+    <section id="sec2" class="demo">
+      <h1 id="about">About Me</h1>
+      <div class="container" id="contain2">
         <div class="row">
-          <div class="col-md-4 col-6">
-            <a href="https://armisfinancial.com" target="_blank">
-              <img src="dist/img/projects/project1.jpg" alt="Project">
-            </a>
-            <a href="https://armisfinancial.com" class="btn btn-dark"><i class="fas fa-eye"> Armis Financial LLC</i></a>
-
-
-            <a href="https://github.com/deivit24/Armis-Financial" class="btn btn-light"><i class="fab fa-github"> View
-                on Github</i></a>
-
+          <div id="b1" class="col-md-6 block">
+            <img src="dist/img/me.jpg" alt="" />
           </div>
-          <div class="col-md-4 col-6">
-            <a href="https://fuegoleondevelopment.com" target="_blank">
-              <img src="dist/img/projects/project2.jpg" alt="Project">
-            </a>
-            <a href="https://fuegoleondevelopment.com" class="btn btn-dark" target="_blank">
-              <i class="fas fa-eye"> Fuegoleon Development</i>
-            </a>
-            <a href="https://github.com/deivit24/Fuegoleon-Development" class="btn btn-light" target="_blank">
-              <i class="fab fa-github"> View on Github</i>
-            </a>
+          <div id="b2" class="col-md-6 block">
+            <p>
+              I'm <span class="name"> David Salazar</span>, a husband, business
+              owner, Front-End Web Developer, and aspiring Full-Stack.
+            </p>
           </div>
-          <div class="col-md-4 col-6">
-            <a href="https://heuristic-ride-af34ca.netlify.com" target="_blank">
-              <img src="dist/img/projects/project3.jpg" alt="Project">
-            </a>
-            <a href="https://heuristic-ride-af34ca.netlify.com" target="_blank" class="btn btn-dark">
-              <i class="fas fa-eye"> Frank Key & Associates</i>
-            </a>
-            <a href="https://github.com/deivit24/Frank-Key-Associates" target="_blank" class="btn btn-light">
-              <i class="fab fa-github"> View on Github</i>
-
-            </a>
-          </div>
-
-
-          <div class="col-md-4 col-6">
-            <a href="https://agitated-kepler-a559b4.netlify.com/" target="_blank">
-              <img src="dist/img/projects/project4.jpg" alt="Project">
-            </a>
-            <a href="https://agitated-kepler-a559b4.netlify.com/" target="_blank" class="btn btn-dark">
-              <i class="fas fa-eye"> RGV Tennis Academy</i>
-            </a>
-            <a href="https://github.com/deivit24/RGV-Tennis" target="_blank" class="btn btn-light">
-              <i class="fab fa-github"> View on Github</i>
-            </a>
-          </div>
-          <div class="col-md-4 col-6">
-            <a href="https://zen-noyce-fd5fb1.netlify.com/" target="_blank">
-              <img src="dist/img/projects/project5.jpg" alt="Project">
-            </a>
-            <a href="https://zen-noyce-fd5fb1.netlify.com/" target="_blank" class="btn btn-dark">
-              <i class="fas fa-eye"> Color Game </i>
-            </a>
-            <a href="https://github.com/deivit24/Color-Game" target="_blank" class="btn btn-light">
-              <i class="fab fa-github"> View on Github</i>
-            </a>
-          </div>
-          <div class="col-md-4 col-6">
-            <a href="https://sharp-northcutt-c9aa7e.netlify.com/" target="_blank">
-              <img src="dist/img/projects/project6.jpg" alt="Project">
-
-            </a>
-            <a href="https://sharp-northcutt-c9aa7e.netlify.com/" target="_blank" class="btn btn-dark">
-              <i class="fas fa-eye"> My Anime List</i>
-            </a>
-            <a href="https://github.com/deivit24/my-anime-list" target="_blank" class="btn btn-light">
-              <i class="fab fa-github"> View on Github</i>
-            </a>
+          <div id="b3" class="col block">
+            <p>
+              Born in McAllen, TX and was raised a tennis player. Lived in
+              Nashville, New York, United Kingdom, and St. Louis. But these days
+              I live in Austin, TX.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-    <a href="#sec5" class="scroll"><span></span>Scroll</a>
-  </section>
-  <section id="sec5" class="demo">
-    <a href="#david" class="scroll"><span class="last"></span>Top</a>
-  </section>
+      <a href="#sec3" class="scroll"><span></span>Scroll</a>
+    </section>
+    <section id="sec3" class="demo">
+      <h1 id="knowledge">Knowledge & Skills</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-6 block-3">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+          </div>
+          <div class="col-xs-6 block-3">
+            <i class="devicon-visualstudio-plain colored"></i>
 
+            <i class="devicon-chrome-plain-wordmark colored"></i>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
+            <i class="devicon-git-plain-wordmark colored"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 block-3">
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+          </div>
+          <div id="learn" class="col-xs-6 block-3">
+            <i class="devicon-react-original-wordmark colored"></i>
 
-  <!-- Scroll Magic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js
+            <i class="devicon-babel-plain colored"></i>
+            <i class="devicon-webpack-plain-wordmark colored"></i>
+            <h1>Currently Learning</h1>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                style="width: 75%;"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                75%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#sec4" class="scroll"><span></span>Scroll</a>
+    </section>
+    <section id="sec4" class="demo">
+      <h1 id="work">Work & Progress</h1>
+      <div class="container-fluid">
+        <div class="projects">
+          <div class="row">
+            <div class="col-md-4 col-6">
+              <a href="https://armisfinancial.com" target="_blank">
+                <img src="dist/img/projects/project1.jpg" alt="Project" />
+              </a>
+              <a href="https://armisfinancial.com" class="btn btn-dark"
+                ><i class="fas fa-eye"> Armis Financial LLC</i></a
+              >
+
+              <a
+                href="https://github.com/deivit24/Armis-Financial"
+                class="btn btn-light"
+                ><i class="fab fa-github"> View on Github</i></a
+              >
+            </div>
+            <div class="col-md-4 col-6">
+              <a href="https://fuegoleondevelopment.com" target="_blank">
+                <img src="dist/img/projects/project2.jpg" alt="Project" />
+              </a>
+              <a
+                href="https://fuegoleondevelopment.com"
+                class="btn btn-dark"
+                target="_blank"
+              >
+                <i class="fas fa-eye"> Fuegoleon Development</i>
+              </a>
+              <a
+                href="https://github.com/deivit24/Fuegoleon-Development"
+                class="btn btn-light"
+                target="_blank"
+              >
+                <i class="fab fa-github"> View on Github</i>
+              </a>
+            </div>
+            <div class="col-md-4 col-6">
+              <a
+                href="https://heuristic-ride-af34ca.netlify.com"
+                target="_blank"
+              >
+                <img src="dist/img/projects/project3.jpg" alt="Project" />
+              </a>
+              <a
+                href="https://heuristic-ride-af34ca.netlify.com"
+                target="_blank"
+                class="btn btn-dark"
+              >
+                <i class="fas fa-eye"> Frank Key & Associates</i>
+              </a>
+              <a
+                href="https://github.com/deivit24/Frank-Key-Associates"
+                target="_blank"
+                class="btn btn-light"
+              >
+                <i class="fab fa-github"> View on Github</i>
+              </a>
+            </div>
+
+            <div class="col-md-4 col-6">
+              <a
+                href="https://agitated-kepler-a559b4.netlify.com/"
+                target="_blank"
+              >
+                <img src="dist/img/projects/project4.jpg" alt="Project" />
+              </a>
+              <a
+                href="https://agitated-kepler-a559b4.netlify.com/"
+                target="_blank"
+                class="btn btn-dark"
+              >
+                <i class="fas fa-eye"> RGV Tennis Academy</i>
+              </a>
+              <a
+                href="https://github.com/deivit24/RGV-Tennis"
+                target="_blank"
+                class="btn btn-light"
+              >
+                <i class="fab fa-github"> View on Github</i>
+              </a>
+            </div>
+            <div class="col-md-4 col-6">
+              <a href="https://zen-noyce-fd5fb1.netlify.com/" target="_blank">
+                <img src="dist/img/projects/project5.jpg" alt="Project" />
+              </a>
+              <a
+                href="https://zen-noyce-fd5fb1.netlify.com/"
+                target="_blank"
+                class="btn btn-dark"
+              >
+                <i class="fas fa-eye"> Color Game </i>
+              </a>
+              <a
+                href="https://github.com/deivit24/Color-Game"
+                target="_blank"
+                class="btn btn-light"
+              >
+                <i class="fab fa-github"> View on Github</i>
+              </a>
+            </div>
+            <div class="col-md-4 col-6">
+              <a
+                href="https://sharp-northcutt-c9aa7e.netlify.com/"
+                target="_blank"
+              >
+                <img src="dist/img/projects/project6.jpg" alt="Project" />
+              </a>
+              <a
+                href="https://sharp-northcutt-c9aa7e.netlify.com/"
+                target="_blank"
+                class="btn btn-dark"
+              >
+                <i class="fas fa-eye"> Anime List</i>
+              </a>
+              <a
+                href="https://github.com/deivit24/my-anime-list"
+                target="_blank"
+                class="btn btn-light"
+              >
+                <i class="fab fa-github"> View on Github</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#sec5" class="scroll"><span></span>Scroll</a>
+    </section>
+    <section id="sec5" class="demo">
+      <h1 id="contact">Let's Talk!</h1>
+      <div class="container">
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first-name"
+                placeholder="John"
+                name="first-name"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="last-name"
+                placeholder="Smith"
+                name="last-name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                name="email"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group col-md-6">
+              <label for="number">Number</label>
+              <input
+                type="number"
+                class="form-control"
+                id="number"
+                placeholder="555-555-5555"
+                name="number"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Personal Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              name="message"
+              placeholder="Enter a personal message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="icons">
+          <a href="https://www.facebook.com/AugieSal" target="a_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/david-a-salazar-aa6a2750/"
+            target="a_blank"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/deivit24" target="a_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href=""> <i class="fas fa-envelope fa-2x"></i> </a>
+          <a href=""> <i class="fab fa-instagram fa-2x"></i> </a>
+        </div>
+      </div>
+      <a href="#david" class="scroll"><span class="last"></span>Top</a>
+    </section>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js
     "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-  <!-- Optional JavaScript -->
-  <script src="dist/js/main.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="dist/js/main.js"></script>
+  </body>
 </html>
