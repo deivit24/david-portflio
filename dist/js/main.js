@@ -204,3 +204,7 @@ $('.col-md-4').each(function () {
 
     .addTo(con);
 });
+
+$('.col-6').on('click', function () {
+  $('.block').toggleClass('flipped');
+});

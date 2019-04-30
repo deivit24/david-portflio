@@ -20,7 +20,6 @@ h4 {
 section {
   position: relative;
   width: 100%;
-  height: 100vh;
   text-align: center; }
   section a span {
     text-align: center;
@@ -230,18 +229,9 @@ section {
   body #sec3 #knowledge {
     font-size: 2rem !important; }
   body #sec3 i {
-    font-size: 3rem !important; }
-  body #sec3 #learn {
-    padding: 10px !important; }
-    body #sec3 #learn h1 {
-      font-size: 1rem !important;
-      margin-top: 10px !important;
-      margin-bottom: 10px !important; }
-    body #sec3 #learn .progress {
-      height: 20px !important; }
-    body #sec3 #learn .progress-bar-striped {
-      color: white;
-      font-size: 1rem; }
+    font-size: 8rem !important; }
+  body #sec3 h1 {
+    font-size: 2rem !important; }
   body #sec4 #work {
     font-size: 1.5rem !important; }
   body #sec4 .container-fluid {
@@ -262,7 +252,8 @@ section {
     margin-left: -12px !important; } }
 
 #sec2 {
-  background: #223; }
+  background: #2D2D77;
+  height: 100vh; }
   #sec2 #about {
     padding: 20px;
     color: #c5c6c7;
@@ -658,7 +649,8 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background.jpg);
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    height: 100vh; }
     html #sec1:after,
     body #sec1:after {
       background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 80%, rgba(0, 0, 0, 0.8) 100%);
@@ -685,7 +677,9 @@ body {
         font-size: 12rem; }
   html #sec3,
   body #sec3 {
-    background: #20232e; }
+    background: #173735;
+    padding: 50px 0px;
+    min-height: 100vh; }
     html #sec3 #knowledge,
     body #sec3 #knowledge {
       padding: 20px;
@@ -695,107 +689,97 @@ body {
       transition: all 0.5s ease-out;
       text-align: center;
       font-size: 3rem; }
-    html #sec3 .container-fluid,
-    body #sec3 .container-fluid {
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      html #sec3 .container-fluid .row,
-      body #sec3 .container-fluid .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; }
-        html #sec3 .container-fluid .row .block-3,
-        body #sec3 .container-fluid .row .block-3 {
-          width: auto;
-          height: auto;
-          padding: 35px;
-          transition: all 1s ease-in-out;
-          opacity: 0; }
-          html #sec3 .container-fluid .row .block-3 i,
-          body #sec3 .container-fluid .row .block-3 i {
-            font-size: 10rem;
-            padding: 20px; }
-          html #sec3 .container-fluid .row .block-3 h1,
-          body #sec3 .container-fluid .row .block-3 h1 {
-            color: #c5c6c7;
-            margin-top: 25px;
-            margin-bottom: 15px; }
-          html #sec3 .container-fluid .row .block-3 .progress,
-          body #sec3 .container-fluid .row .block-3 .progress {
-            height: 30px; }
-          html #sec3 .container-fluid .row .block-3 .progress-bar-striped,
-          body #sec3 .container-fluid .row .block-3 .progress-bar-striped {
-            color: white;
-            font-size: 2rem; }
-        html #sec3 .container-fluid .row #learn,
-        body #sec3 .container-fluid .row #learn {
-          background: #f74e23; }
-  html #sec4 #work,
-  body #sec4 #work {
-    padding: 20px;
-    color: #c5c6c7;
-    font-family: "Major Mono Display", monospace;
-    text-transform: uppercase;
-    transition: all 0.5s ease-out;
-    text-align: center;
-    font-size: 3rem; }
-  html #sec4 .container-fluid,
-  body #sec4 .container-fluid {
-    height: 80vh;
-    background: #0b0c10;
-    width: 80%; }
-    html #sec4 .container-fluid .projects img,
-    body #sec4 .container-fluid .projects img {
-      width: 90%;
-      border: 1px white solid; }
-      html #sec4 .container-fluid .projects img:hover,
-      body #sec4 .container-fluid .projects img:hover {
-        opacity: 0.5;
-        border-color: #c5c6c7;
-        transition: all 0.5s ease-out;
-        cursor: pointer; }
-    html #sec4 .container-fluid .projects .row .col-md-4,
-    body #sec4 .container-fluid .projects .row .col-md-4 {
-      opacity: 0;
-      transition: all 1s ease-in-out;
-      transform: translateY(200px); }
-    html #sec4 .container-fluid .projects .row .btn,
-    body #sec4 .container-fluid .projects .row .btn {
-      display: block;
-      padding: 0.5rem 1rem;
-      border: 0;
-      margin-bottom: 0.3rem;
+    html #sec3 .container-fluid h1,
+    body #sec3 .container-fluid h1 {
+      padding: 20px;
+      color: #c5c6c7;
+      font-family: "Major Mono Display", monospace;
+      text-transform: uppercase;
+      transition: all 0.5s ease-out;
       text-align: center;
-      font-size: 1.5rem;
-      transition: all 0.5s ease-out; }
-    html #sec4 .container-fluid .projects .row .btn-dark,
-    body #sec4 .container-fluid .projects .row .btn-dark {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      background: #c5c6c7;
-      color: #0b0c10; }
-      html #sec4 .container-fluid .projects .row .btn-dark:hover,
-      body #sec4 .container-fluid .projects .row .btn-dark:hover {
-        cursor: pointer;
-        background: #45a29e;
-        color: white; }
-    html #sec4 .container-fluid .projects .row .btn-light,
-    body #sec4 .container-fluid .projects .row .btn-light {
-      width: 90%;
-      background: #c5c6c7;
-      color: #0b0c10;
-      margin-left: auto;
-      margin-right: auto; }
-      html #sec4 .container-fluid .projects .row .btn-light:hover,
-      body #sec4 .container-fluid .projects .row .btn-light:hover {
-        cursor: pointer;
-        background: #f74e23;
-        color: white; }
+      font-size: 3rem;
+      margin-bottom: 20px; }
+    html #sec3 .container-fluid .row .col-sm-2,
+    body #sec3 .container-fluid .row .col-sm-2 {
+      padding: 20px;
+      height: 200px; }
+      html #sec3 .container-fluid .row .col-sm-2 i,
+      body #sec3 .container-fluid .row .col-sm-2 i {
+        font-size: 8rem; }
+    html #sec3 .container-fluid .row .col-sm-4 i,
+    body #sec3 .container-fluid .row .col-sm-4 i {
+      font-size: 8rem; }
+    html #sec3 .container-fluid .row .col-sm-4 .devicon-express-original-wordmark,
+    body #sec3 .container-fluid .row .col-sm-4 .devicon-express-original-wordmark {
+      color: white !important; }
+  html #sec4,
+  body #sec4 {
+    height: 100vh; }
+    html #sec4 #work,
+    body #sec4 #work {
+      padding: 20px;
+      color: #c5c6c7;
+      font-family: "Major Mono Display", monospace;
+      text-transform: uppercase;
+      transition: all 0.5s ease-out;
+      text-align: center;
+      font-size: 3rem; }
+    html #sec4 .container-fluid,
+    body #sec4 .container-fluid {
+      height: 80vh;
+      background: #0b0c10;
+      width: 80%; }
+      html #sec4 .container-fluid .projects img,
+      body #sec4 .container-fluid .projects img {
+        width: 90%;
+        border: 1px white solid; }
+        html #sec4 .container-fluid .projects img:hover,
+        body #sec4 .container-fluid .projects img:hover {
+          opacity: 0.5;
+          border-color: #c5c6c7;
+          transition: all 0.5s ease-out;
+          cursor: pointer; }
+      html #sec4 .container-fluid .projects .row .col-md-4,
+      body #sec4 .container-fluid .projects .row .col-md-4 {
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        transform: translateY(200px); }
+      html #sec4 .container-fluid .projects .row .btn,
+      body #sec4 .container-fluid .projects .row .btn {
+        display: block;
+        padding: 0.5rem 1rem;
+        border: 0;
+        margin-bottom: 0.3rem;
+        text-align: center;
+        font-size: 1.5rem;
+        transition: all 0.5s ease-out; }
+      html #sec4 .container-fluid .projects .row .btn-dark,
+      body #sec4 .container-fluid .projects .row .btn-dark {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background: #c5c6c7;
+        color: #0b0c10; }
+        html #sec4 .container-fluid .projects .row .btn-dark:hover,
+        body #sec4 .container-fluid .projects .row .btn-dark:hover {
+          cursor: pointer;
+          background: #45a29e;
+          color: white; }
+      html #sec4 .container-fluid .projects .row .btn-light,
+      body #sec4 .container-fluid .projects .row .btn-light {
+        width: 90%;
+        background: #c5c6c7;
+        color: #0b0c10;
+        margin-left: auto;
+        margin-right: auto; }
+        html #sec4 .container-fluid .projects .row .btn-light:hover,
+        body #sec4 .container-fluid .projects .row .btn-light:hover {
+          cursor: pointer;
+          background: #f74e23;
+          color: white; }
   html #sec5,
   body #sec5 {
+    min-height: 100vh;
     background: #333;
     background-image: -webkit-linear-gradient(35deg, #0b0c10, #333);
     background-image: linear-gradient(35deg, #0b0c10, #333); }

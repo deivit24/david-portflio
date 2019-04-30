@@ -1,15 +1,16 @@
 $customBackCol: #8855DD;
 $pink: #F58;
-$c1: #a6aad1;
+$c1: #b0d1a6;
 $c2: #5f5f80;
 $break-med: 900px;
 $break-small: 700px;
-$cardCol: #1D1D2B;
+$cardCol:#1D1D2B;
 
 
 
 #sec2 {
-  background: #223;
+  background: #2D2D77;
+  height: 100vh;
 
   #about {
     padding: 20px;
@@ -234,7 +235,7 @@ $cardCol: #1D1D2B;
     .pxc-subcard {
       transition: all 600ms ease;
       border-radius: 3px;
-      background: #1D1D2B;
+      background: $cardCol;
       width: 650px;
       margin: 25px 200px 25px -25px;
       z-index: 0;

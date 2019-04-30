@@ -31,6 +31,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 
     &:after {
       background: -webkit-linear-gradient(top,
@@ -155,7 +156,9 @@ body {
   // // =====End Section 2=====
   // ===== Start Section 3=====
   #sec3 {
-    background: lighten($third, 10);
+    background: darken($main-dark, 30);
+    padding: 50px 0px;
+    min-height: 100vh;
 
     #knowledge {
       padding: 20px;
@@ -168,46 +171,42 @@ body {
     }
 
     .container-fluid {
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+
+
+      h1 {
+        padding: 20px;
+        color: $second;
+        font-family: $crazy;
+        text-transform: uppercase;
+        @include easeOut;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
 
       .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        .block-3 {
-          width: auto;
-          height: auto;
-          padding: 35px;
-          transition: all 1s ease-in-out;
-          opacity: 0;
+        .col-sm-2 {
+          padding: 20px;
+          height: 200px;
 
           i {
-            font-size: 10rem;
-            padding: 20px;
-          }
-
-          h1 {
-            color: $second;
-            margin-top: 25px;
-            margin-bottom: 15px;
-          }
-
-          .progress {
-            height: 30px;
-          }
-
-          .progress-bar-striped {
-            color: white;
-            font-size: 2rem;
+            font-size: 8rem;
           }
         }
 
-        #learn {
-          background: $fourth;
+        .col-sm-4 {
+
+
+          i {
+            font-size: 8rem;
+
+
+          }
+
+          .devicon-express-original-wordmark {
+            color: white !important;
+
+          }
         }
       }
     }
@@ -217,6 +216,8 @@ body {
   // ===== Start Section 4 =====
 
   #sec4 {
+    height: 100vh;
+
     #work {
       padding: 20px;
       color: $second;
@@ -246,6 +247,8 @@ body {
         }
 
         .row {
+
+
           .col-md-4 {
             opacity: 0;
             transition: all 1s ease-in-out;
@@ -298,6 +301,8 @@ body {
   //  ===== Start Section 5 Contact =====
 
   #sec5 {
+    min-height: 100vh;
+
     #contact {
       padding: 20px;
       color: $second;
