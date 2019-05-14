@@ -57,7 +57,12 @@
     // End Section 1
     // Start Section 2
     #sec2 {
-      background: $fourth !important;
+      height: auto !important;
+
+      #contain2 {
+
+        height: 800px !important;
+      }
 
       #about {
         font-size: 2rem !important;

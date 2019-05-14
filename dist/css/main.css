@@ -209,7 +209,9 @@ section {
   body #sec1 #hello .txt-type {
     font-size: 5rem !important; }
   body #sec2 {
-    background: #f74e23 !important; }
+    height: auto !important; }
+    body #sec2 #contain2 {
+      height: 800px !important; }
     body #sec2 #about {
       font-size: 2rem !important; }
     body #sec2 #b1 {
@@ -294,7 +296,7 @@ section {
         margin: 30px 30px; } }
     @media screen and (max-width: 700px) {
       #sec2 #contain2 .plx-card {
-        height: auto;
+        height: 1000px;
         width: auto;
         flex-direction: column;
         border-radius: 2px;
