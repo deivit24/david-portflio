@@ -393,10 +393,11 @@ $cardCol:#1D1D2B;
 
     @media screen and (max-width: 700px) {
       .pxc-title {
-        font-size: 16px;
+        font-size: 18px;
         white-space: initial;
         overflow: initial;
         text-overflow: initial;
+        margin: 0 auto;
       }
     }
 

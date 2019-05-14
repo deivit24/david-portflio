@@ -211,7 +211,8 @@ section {
   body #sec2 {
     height: auto !important; }
     body #sec2 #contain2 {
-      height: 800px !important; }
+      height: 800px !important;
+      padding-bottom: 50px; }
     body #sec2 #about {
       font-size: 2rem !important; }
     body #sec2 #b1 {
@@ -522,10 +523,11 @@ section {
       font-size: 18px; }
     @media screen and (max-width: 700px) {
       #sec2 #contain2 .pxc-title {
-        font-size: 16px;
+        font-size: 18px;
         white-space: initial;
         overflow: initial;
-        text-overflow: initial; } }
+        text-overflow: initial;
+        margin: 0 auto; } }
     #sec2 #contain2 .pxc-sub {
       margin: 2px 0 8px 0;
       flex: 1 1 auto;
@@ -716,7 +718,7 @@ body {
       color: white !important; }
   html #sec4,
   body #sec4 {
-    height: 100vh; }
+    padding: 15px 0; }
     html #sec4 #work,
     body #sec4 #work {
       padding: 20px;
@@ -728,9 +730,8 @@ body {
       font-size: 3rem; }
     html #sec4 .container-fluid,
     body #sec4 .container-fluid {
-      height: 80vh;
-      background: #0b0c10;
-      width: 80%; }
+      padding: 20px 0px 100px 0px;
+      background: #0b0c10; }
       html #sec4 .container-fluid .projects img,
       body #sec4 .container-fluid .projects img {
         width: 90%;
